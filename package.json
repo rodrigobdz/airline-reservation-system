@@ -7,10 +7,14 @@
   "author": "Rodrigo Bermudez Schettino <rodrigobermudezschettino@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn start-gateway",
-    "start-gateway": "nodemon api-gateway/src/app.js"
+    "install-all": "yarn install-gateway && yarn install-flights",
+    "start": "yarn start-gateway & yarn start-flights",
+    "start-gateway": "nodemon api-gateway/src/app.js",
+    "start-flights": "nodemon flights/src/app.js",
+    "install-gateway": "yarn --cwd 'api-gateway' install",
+    "install-flights": "yarn --cwd 'flights' install"
   },
-  "dependencies": {
-    "hapi": "^17.5.3"
+  "devDependencies": {
+    "nodemon": "^1.18.3"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "main": "app.js",
+  "author": "Rodrigo Bermudez Schettino <rodrigobermudezschettino@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^17.5.3"
+  }
+}
