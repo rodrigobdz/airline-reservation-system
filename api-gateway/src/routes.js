@@ -55,5 +55,12 @@ module.exports = [
     handler: function(request, h) {
       return "Returns all user payments";
     }
+  },
+  {
+    method: "GET",
+    path: "/users/{user}/bookings",
+    handler: function(request, h) {
+      return "Returns all user bookings";
+    }
   }
 ];
