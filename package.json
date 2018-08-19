@@ -7,7 +7,8 @@
   "author": "Rodrigo Bermudez Schettino <rodrigobermudezschettino@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "yarn start-gateway",
+    "start-gateway": "nodemon api-gateway/src/app.js"
   },
   "dependencies": {
     "hapi": "^17.5.3"
