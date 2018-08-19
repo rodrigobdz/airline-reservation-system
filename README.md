@@ -4,11 +4,31 @@ Airline reservation system using microservices.
 
 ## Usage
 
+- Install dependencies in all subdirectories.
+
+  ```sh
+  yarn install-all
+  ```
+
+- Start API gateway server and servers for microservices.
+
+  ```sh
+  yarn start
+  ```
+
+- Run all tests.
+
+  ```sh
+  yarn test
+  ```
+
 ## Built with
 
 - [node.js](https://nodejs.org/) - Server runtime environment
+- [nodemon](https://nodemon.io/) - Restart automatically on changes in development
 - [hapi](https://hapijs.com/) - Server framework for node.js
 - [mongoose](https://mongoosejs.com/) - node.js object modeling for MongoDB
+- [AVA](https://github.com/avajs/ava) - JS test runner
 
 ## Architecture
 

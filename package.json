@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "install-all": "yarn install-gateway && yarn install-flights",
+    "test": "yarn --cwd 'flights' test",
     "start": "yarn start-gateway & yarn start-flights",
     "start-gateway": "nodemon api-gateway/src/app.js",
     "start-flights": "nodemon flights/src/app.js",
