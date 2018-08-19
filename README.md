@@ -34,6 +34,10 @@ Airline reservation system using microservices.
 
 ![Architecture](./assets/airbooking-scheme.png)
 
+## Progress
+
+This is a WIP. Check [projects](https://github.com/rodrigobdz/airline-reservation-system/projects/1) for more details.
+
 ## Contributing
 
 If you find a bug, please create an [issue](https://github.com/rodrigobdz/airline-reservation-system/issues) or a [PR](https://github.com/rodrigobdz/airline-reservation-system/pulls).
