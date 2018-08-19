@@ -8,12 +8,12 @@
   "license": "MIT",
   "scripts": {
     "install-all": "yarn install-gateway && yarn install-flights",
-    "test": "yarn --cwd 'flights' test",
+    "test": "yarn --cwd 'microservices/flights' test",
     "start": "yarn start-gateway & yarn start-flights",
     "start-gateway": "nodemon api-gateway/src/app.js",
-    "start-flights": "nodemon flights/src/app.js",
+    "start-flights": "nodemon microservices/flights/src/app.js",
     "install-gateway": "yarn --cwd 'api-gateway' install",
-    "install-flights": "yarn --cwd 'flights' install"
+    "install-flights": "yarn --cwd 'microservices/flights' install"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
