@@ -30,4 +30,12 @@ async function start() {
   console.log("Server running at:", server.info.uri);
 }
 
-start();
+/**
+ * Start server only if the file is not being required/imported.
+ * Avoids errors while testing.
+ */
+if (!module.parent) {
+  start();
+}
+
+module.exports = server;

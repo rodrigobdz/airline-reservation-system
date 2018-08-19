@@ -2,7 +2,13 @@
   "main": "app.js",
   "author": "Rodrigo Bermudez Schettino <rodrigobermudezschettino@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "ava --verbose test/**/*.js"
+  },
   "dependencies": {
     "hapi": "^17.5.3"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0"
   }
 }
