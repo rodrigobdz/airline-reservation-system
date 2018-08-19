@@ -11,6 +11,17 @@ const server = Hapi.server({
 });
 
 /**
+ * Define server routes
+ */
+server.route({
+  method: "GET",
+  path: "/flights",
+  handler: function(request, h) {
+    return "Returns all flights";
+  }
+});
+
+/**
  * Start server and handle errors
  */
 async function start() {

@@ -1,6 +1,7 @@
 "use strict";
 
 const Hapi = require("hapi");
+const H2O2 = require("h2o2");
 const routes = require("./routes");
 
 /**
@@ -21,6 +22,7 @@ server.route(routes);
  */
 async function start() {
   try {
+    await server.register({ plugin: H2O2 });
     await server.start();
   } catch (err) {
     console.log(err);

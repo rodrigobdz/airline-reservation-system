@@ -3,6 +3,7 @@
   "author": "Rodrigo Bermudez Schettino <rodrigobermudezschettino@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "h2o2": "^8.1.2",
     "hapi": "^17.5.3"
   }
 }

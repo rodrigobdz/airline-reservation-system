@@ -1,4 +1,25 @@
 "use strict";
+
+function proxy(request, h, port) {
+  return h.proxy({ host: "localhost", port: port });
+}
+
+function flightProxy(request, h) {
+  return proxy(request, h, "8001");
+}
+
+function userProxy(request, h) {
+  return proxy(request, h, "8002");
+}
+
+function paymentProxy(request, h) {
+  return proxy(request, h, "8003");
+}
+
+function bookingProxy(request, h) {
+  return proxy(request, h, "8004");
+}
+
 module.exports = [
   {
     method: "GET",
@@ -10,57 +31,41 @@ module.exports = [
   {
     method: "GET",
     path: "/flights",
-    handler: function(request, h) {
-      return "Returns available flights";
-    }
+    handler: flightProxy
   },
   {
     method: "GET",
     path: "/flights/{flight}",
-    handler: function(request, h) {
-      return "Returns flight details";
-    }
+    handler: flightProxy
   },
   {
     method: "POST",
     path: "/flights/{flight}",
-    handler: function(request, h) {
-      return "Create new flight";
-    }
+    handler: flightProxy
   },
   {
     method: "GET",
     path: "/users",
-    handler: function(request, h) {
-      return "Returns all passengers";
-    }
+    handler: userProxy
   },
   {
     method: "GET",
     path: "/users/{user}/flights",
-    handler: function(request, h) {
-      return "Returns all booked flights from a user";
-    }
+    handler: flightProxy
   },
   {
     method: "GET",
     path: "/users/{user}/flights/{flight}",
-    handler: function(request, h) {
-      return "Returns info regarding a user's specific flight";
-    }
+    handler: flightProxy
   },
   {
     method: "GET",
     path: "/users/{user}/payments",
-    handler: function(request, h) {
-      return "Returns all user payments";
-    }
+    handler: paymentProxy
   },
   {
     method: "GET",
     path: "/users/{user}/bookings",
-    handler: function(request, h) {
-      return "Returns all user bookings";
-    }
+    handler: bookingProxy
   }
 ];

@@ -72,6 +72,15 @@ cryptiles@4.x.x:
   dependencies:
     boom "7.x.x"
 
+h2o2@^8.1.2:
+  version "8.1.2"
+  resolved "https://registry.yarnpkg.com/h2o2/-/h2o2-8.1.2.tgz#25e6f69f453175c9ca1e3618741c5ebe1b5000c1"
+  dependencies:
+    boom "7.x.x"
+    hoek "5.x.x"
+    joi "13.x.x"
+    wreck "14.x.x"
+
 hapi@^17.5.3:
   version "17.5.3"
   resolved "https://registry.yarnpkg.com/hapi/-/hapi-17.5.3.tgz#60266ca072d69620b5b135c0c98a17228c3bf34d"
