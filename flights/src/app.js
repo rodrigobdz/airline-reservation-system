@@ -1,6 +1,7 @@
 "use strict";
 
 const Hapi = require("hapi");
+const routes = require("./routes");
 
 /**
  * Server configuration
@@ -13,13 +14,7 @@ const server = Hapi.server({
 /**
  * Define server routes
  */
-server.route({
-  method: "GET",
-  path: "/flights",
-  handler: function(request, h) {
-    return "Returns all flights";
-  }
-});
+server.route(routes);
 
 /**
  * Start server and handle errors
