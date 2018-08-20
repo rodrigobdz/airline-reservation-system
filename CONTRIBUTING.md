@@ -8,7 +8,7 @@ If you're interested in contributing to airline-reservation-system, hopefully th
 
 ## Get involved
 
-There are many ways to contribute to GIPHY, and many of them do not involve writing any code. Here's a few ideas to get started:
+There are many ways to contribute to [airline-reservation-system](https://github.com/rodrigobdz/airline-reservation-system), and many of them do not involve writing any code. Here's a few ideas to get started:
 
 - Look through the [open issues](https://github.com/rodrigobdz/airline-reservation-system/issues). Provide workarounds, ask for clarification, or suggest labels.
 - If you find an issue you would like to fix, [open a pull request](https://github.com/rodrigobdz/airline-reservation-system/pulls).
